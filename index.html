@@ -4,26 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Application Security</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>Web Application Security 💻🔒</header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="topic1.html">Threats</a>
-    <a href="topic2.html">Best Practices</a>
-    <a href="references.html">References</a>
-</nav>
-
-<div class="container">
-    <h1>Welcome to Web Application Security</h1>
-    <p>This website provides insights into securing web applications against cyber threats.</p>
-    <img src="https://media.giphy.com/media/l3vR6asMjj6TZ80fu/giphy.gif" alt="Cybersecurity GIF">
-</div>
-
-<footer>© 2025 Web Security | All rights reserved</footer>
-
+    <header>
+        <h1>Web Application Security</h1>
+        <nav>
+            <input type="checkbox" id="menu-toggle"/>
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="authentication.html">Authentication</a></li>
+                <li><a href="xss-csrf.html">XSS & CSRF</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="grid-container">
+        <section class="intro">
+            <h2>Welcome!</h2>
+            <p>Explore the fundamentals of Web Application Security through interactive and colorful content.</p>
+            <h3>Key Terms</h3>
+            <ul>
+                <li>Authentication</li>
+                <li>Authorization</li>
+                <li>XSS</li>
+                <li>CSRF</li>
+                <li>Encryption</li>
+            </ul>
+        </section>
+        <aside class="toc">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="authentication.html">Authentication</a></li>
+                <li><a href="xss-csrf.html">XSS & CSRF</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>&copy; 2025 Web Security Hub</p>
+    </footer>
 </body>
 </html>
