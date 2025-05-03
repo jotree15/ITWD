@@ -1,66 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Quiz - Web App Security</title>
+  <title>Quiz</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="quiz.js"></script>
 </head>
 <body>
   <header>
-    <h1>Web Application Security Quiz</h1>
+    <h1>Quiz</h1>
     <nav>
-      <ul class="nav-links">
+      <ul class="menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="topic1.html">Subtopic 1</a></li>
-        <li><a href="topic2.html">Subtopic 2</a></li>
-        <li><a href="resources.html">Resources</a></li>
+        <li><a href="authentication.html">Authentication</a></li>
+        <li><a href="vulnerabilities.html">Vulnerabilities</a></li>
         <li><a href="quiz.html">Quiz</a></li>
+        <li><a href="references.html">References</a></li>
       </ul>
     </nav>
   </header>
-  <main class="quiz-container">
+  <main>
     <form id="quizForm">
-      <div class="question-block">
-        <p>1. What is the main purpose of web application security?</p>
-        <label><input type="radio" name="q1" value="a"> To decorate the website</label><br />
-        <label><input type="radio" name="q1" value="b"> To optimize SEO</label><br />
-        <label><input type="radio" name="q1" value="c"> To protect users and data</label><br />
+      <div>
+        <p>1. What is authentication?</p>
+        <input type="radio" name="q1" value="a"> Verifying user identity<br>
+        <input type="radio" name="q1" value="b"> Encrypting data<br>
       </div>
-
-      <div class="question-block">
-        <p>2. Which of the following is NOT a common security risk?</p>
-        <label><input type="radio" name="q2" value="a"> SQL Injection</label><br />
-        <label><input type="radio" name="q2" value="b"> Cross-Site Scripting</label><br />
-        <label><input type="radio" name="q2" value="c"> Responsive Design</label><br />
+      <div>
+        <p>2. What does SQL Injection target?</p>
+        <input type="radio" name="q2" value="a"> CSS<br>
+        <input type="radio" name="q2" value="b"> Databases<br>
       </div>
-
-      <div class="question-block">
-        <p>3. Which protocol is secure for web communication?</p>
-        <label><input type="radio" name="q3" value="a"> HTTP</label><br />
-        <label><input type="radio" name="q3" value="b"> HTTPS</label><br />
-        <label><input type="radio" name="q3" value="c"> FTP</label><br />
+      <div>
+        <p>3. Choose the vulnerabilities:</p>
+        <input type="checkbox" name="q3" value="xss"> XSS<br>
+        <input type="checkbox" name="q3" value="sql"> SQL Injection<br>
+        <input type="checkbox" name="q3" value="https"> HTTPS<br>
       </div>
-
-      <div class="question-block">
-        <p>4. Fill in the blank: _____ is used to prevent unauthorized access to user data.</p>
+      <div>
+        <p>4. Fill in the blank: XSS stands for ______ site scripting.</p>
         <input type="text" name="q4" />
       </div>
-
-      <div class="question-block">
-        <p>5. Select all examples of secure practices:</p>
-        <label><input type="checkbox" name="q5" value="a"> Using HTTPS</label><br />
-        <label><input type="checkbox" name="q5" value="b"> Input validation</label><br />
-        <label><input type="checkbox" name="q5" value="c"> Leaving passwords in code</label><br />
-        <label><input type="checkbox" name="q5" value="d"> Encrypting data</label><br />
-      </div>
-
       <button type="submit">Submit</button>
       <button type="button" onclick="restartQuiz()">Restart</button>
     </form>
     <div id="results"></div>
   </main>
+  <footer>
+    <p>&copy; 2025 IT 3203 Project</p>
+  </footer>
 </body>
 </html>
